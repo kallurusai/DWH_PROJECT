@@ -1,4 +1,8 @@
-{{ config(materialized="incremental", incremental_strategy="append") }}
+{{ config(materialized="incremental", 
+          incremental_strategy="append"
+          )
+          
+ }}
 
 with
     orders as (select * from {{ ref("stg_jaffle_shop__orders") }}),
