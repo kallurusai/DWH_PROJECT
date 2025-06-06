@@ -4,6 +4,6 @@ sources:
   - name: jaffle_shop
     database: snfdb
     schema: snfsch
-    tables: 
+    tables:
       - name: employee1
       - name: department
